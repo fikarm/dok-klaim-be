@@ -1,7 +1,7 @@
 from src.core.llm import get_model
 from src.agents.agent_rule_evaluator.main import cek_kelengkapan
 from src.core.schema import State
-from schema.model import GemmaModelName, LlamaModelName
+from src.schema.model import GemmaModelName, LlamaModelName
 from langgraph.graph import END, StateGraph, MessagesState
 from langgraph.prebuilt import ToolNode, tools_condition
 from langchain_core.tools import tool

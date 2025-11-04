@@ -2,11 +2,11 @@ import os
 from pathlib import Path
 from uuid import uuid4, UUID
 from typing import Any, Annotated, List
-from schema import UserInput, ChatMeta, PdfUnggah
 from fastapi import APIRouter, Form, File, UploadFile
 from datetime import datetime
-from core.settings import settings
 from src.agents import AgentGraph, get_agent
+from src.core.settings import settings
+from src.schema.schema import UserInput, ChatMeta, PdfUnggah
 from langchain_core.runnables import RunnableConfig
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage, AnyMessage
 
@@ -79,62 +79,3 @@ def upload_files(uploadedFiles: list[UploadFile]):
         # upload to temp
         with open(upload_path, "wb") as tmp:
             tmp.write(uploaded.file.read())
-
-
-# @ChatRouter.post("/invoke")
-# async def invoke(user_input: Annotated[UserInput, Form()]):
-#     # if user_input.pdfs:
-#     #     return user_input.pdfs
-#     # user_input
-
-#     messages: List[AnyMessage] = []
-
-#     # jika ada file konversi ke system chat dan beri metadata
-#     if user_input.pdfs:
-#         upload_files(user_input.pdfs)
-
-#         meta: ChatMeta = ChatMeta(
-#             pdfs=[
-#                 PdfUnggah(
-#                     path=os.path.join(settings.TEMP_DIR, pdf.filename or ""),
-#                     name=pdf.filename or "",
-#                 )
-#                 for pdf in user_input.pdfs
-#             ],
-#             is_display=False,
-#         )
-
-#         if "pdfs" in meta:
-#             filenames = "\n".join(
-#                 [f"{i + 1}. {pdf.name}" for i, pdf in enumerate(meta["pdfs"])]
-#             )
-
-#             system_message = SystemMessage(
-#                 content=f"User mengunggah file-file berikut: \n{filenames}\nJangan pernah sebutkan lokasi file-file di atas.",
-#                 additional_kwargs=meta,
-#             )
-
-#             messages.append(system_message)
-
-#     # human_message = HumanMessage("Halo")
-#     # messages.append(human_message)
-#     # ai_message = AIMessage("Halo juga")
-#     # messages.append(ai_message)
-
-#     human_message = HumanMessage(user_input.message)
-
-#     messages.append(human_message)
-
-#     # call agent
-#     # file uploaded
-#     # agent: AgentGraph = get_agent(agent_id)
-#     # kwargs, run_id = await _handle_input(user_input, agent)
-
-#     response = await agent.agent_dokklaim.ainvoke(
-#         {"messages": messages}, stream_mode="values"
-#     )
-
-#     return response["messages"]
-#     # return response["messages"][-1]
-#     # return messages
-#     # return os.getcwd()

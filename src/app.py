@@ -3,7 +3,7 @@ from fastapi.routing import APIRoute
 from contextlib import asynccontextmanager
 from collections.abc import AsyncGenerator
 from src.memory import initialize_database, memory_saver
-from agents import agents, get_agent
+from src.agents import agents, get_agent
 from src.routers.ChatRouter import ChatRouter
 
 
