@@ -60,7 +60,12 @@ async def agent_invoke(
             path.parent.mkdir(parents=True, exist_ok=True)
             with open(path, "wb") as f:
                 f.write(await file.read())
-                fnames.append(path)
+                fnames.append(path.as_posix())
+
+        print()
+        print("---")
+        print(fnames)
+        print()
 
         agent.update_state(config, {"files": fnames})
 
