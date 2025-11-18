@@ -1,6 +1,13 @@
-import src.agents.agent_rule_evaluator_vector.parser.searcher as src
-from src.agents.agent_rule_evaluator_vector.parser.schema import NamaBerkas, Extractors
+import src.utils.searcher as src
+from typing import TypeAlias, Callable, List, Dict
+from pymupdf import Document, Page
+from src.agents.agent_rule_evaluator_vector.parser.schema import NamaBerkas
 
+HalamanCari: TypeAlias = Document | List[Page]
+
+Extractor: TypeAlias = Callable[[HalamanCari], src.HalamanDitemukan | None]
+
+Extractors: TypeAlias = Dict[NamaBerkas, Extractor]
 
 # mapping nama berkas dengan ekstraktor yang sesuai
 extractors: Extractors = {

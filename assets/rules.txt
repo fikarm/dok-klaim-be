@@ -1,0 +1,33 @@
+Kelas perawatan pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) harus sama dengan kelas perawatan pada Dokumen SEP Dan Form Rawat Inap jika berbeda maka cek aplikasi V-Claim BPJS
+Tanggal masuk pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) harus sama dengan tgl. sep pada Dokumen Surat Eligibilitas Peserta (SEP BPJS)
+Cara pulang pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) harus sama dengan cara pulang pada Dokumen Ringkasan Pasien Pulang Rawat Inap dan Dokumen Surat Keterangan Kematian
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat kode diagnosa yang diawali dengan huruf S dan T00-T79 maka harus melampirkan Dokumen Jasa Raharja dan Dokumen Surat Pernyataan Kronologis
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG berbunyi Kemoterapi maka wajib melampirkan Dokumen Protokol Pemberian Kemoterapi beserta Dokumen Monitoring dan Efek Samping Pasien Kemoterapi
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG dengan LOS (Length of Stay) hanya 3 hari maka pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) tidak boleh ada kata "berat", kecuali ada informasi bahwa pasien sudah meninggal
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika Diagnosa Utama terdapat kode Z51.1 dan LOS (Length of Stay) lebih dari 5 hari maka lakukan reseleksi diagnosa utama
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) Jika ada prosedur dengan kode digit diawali 00-86 maka harus melampirkan Dokumen Laporan Operasi
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) terdapat prosedur 96.71, 96.72, 93.90, 93.960 maka harus ada Dokumen Surat Keterangan Penggunaan Alat Bantu Pernafasan
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika Special CMG muncul tarif maka wajib terlampir Dokumen Resep Obat/Alkes
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika Diagnosa Sekunder Terdapat kode O80-O84 maka harus terlampir Dokumen Surat Keterangan Telah Dilakukan Pengambilan Sampel Skrining Hipotiroid Kongenital dan Dokumen Surat Keterangan Lahir (melahirkan di RSDS)
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika Diagnosa Sekunder Terdapat kode Z38.0 maka harus terlampir Dokumen Surat Keterangan Lahir (lahir di RSDS)
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika LOS (Length of Stay) kurang dari 3 hari dan INA-CBG menunjukkan kata "Berat" maka cek pada Dokumen Ringkasan Pasien Pulang Rawat Inap
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika Diagnosa Primer Terdapat kode D56.1 maka harus terlampir Dokumen Protokol PEMBERIAN KELASI BESI dan Dokumen E-RESEP
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika Diagnosa Primer Terdapat kode D66 dan D67 maka harus terlampir Dokumen Protokol PEMBERIAN KOSENTRAT, Dokumen HASIL PEMERIKSAAN LABORATORIUM PATOLOGI KLINIK (Faal Koagulasi) dan Dokumen E-RESEP
+Pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat kode diagnosa E40-E46 maka wajib terlampir Dokumen Asesmen Gizi
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat prosedur Tindakan 99.25 maka wajib melampirkan Dokumen PROTOKOL PEMBERIAN KEMOTERAPI (pasien rawat inap)
+Cara pulang pada Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) harus sama dengan cara pulang pada Dokumen Resume Medis Rawat Jalan
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat diagnosa primer Z51.1 maka wajib melampirkan Dokumen PROTOKOL PEMBERIAN KEMOTERAPI (pasien rawat jalan)
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat prosedur Tindakan 99.04, 99.03, 99.05 maka wajib melampirkan Dokumen INSTALASI TRANSFUSI DARAH PENYERAHAN KANTONG DARAH
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR MAGNETIC RESONANCE IMAGING (MRI) maka wajib melampirkan Dokumen HASIL PEMERIKSAAN RADIOLOGI MRI
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis CT SCAN LAIN-LAIN maka wajib melampirkan Dokumen HASIL PEMERIKSAAN RADIOLOGI CT SCAN
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR ULTRASOUND LAIN-LAIN maka wajib melampirkan Dokumen HASIL PEMERIKSAAN RADIOLOGI USG
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR ELEKROENSEFALOGRAFI (EEG) maka wajib melampirkan Dokumen LAPORAN HASIL ELEKTROENSEFALOGRAFI (EEG)
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR EKOKARDIOGRAFI maka wajib melampirkan Dokumen HASIL PEMERIKSAAN TEE (EKOKARDIOGRAFI)
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR PENGAWASAN FUNGSI KARDIOVASKULAR maka wajib melampirkan Dokumen HASIL PEMERIKSAAN SETTING PPM
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis 89.41 maka wajib melampirkan Dokumen HASIL ECG SEGMENT
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PELAYANAN KEDOKTERAN NUKLIR dan diagnosa primer C73 maka wajib melampirkan Dokumen MONITORING CARSINOMA TIROID
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat prosedur Tindakan 92.18 maka wajib melampirkan Dokumen HASIL PEMERIKSAAN RADIOLOGI (Tindakan BMD)
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika terdapat prosedur Tindakan 41.31 maka wajib melampirkan Dokumen HASIL PEMERIKSAAN LABORATORIUM PATOLOGI KLINIK atau BMA
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR THERAPI FISIK DAN PROSEDUR KECIL MUSKULOS (Length of Stay)KLETAL maka wajib melampirkan Dokumen KARTU TERAPI REHABILITASI MEDIK
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR RADIOTERAPI maka wajib melampirkan Dokumen CATATAN HARIAN RADIASI EKSTERNA
+Dokumen Klaim Individual Pasien (E-Klaim Kemenkes) jika INA-CBG tertulis PROSEDUR LAIN- LAIN pada MATA maka wajib melampirkan Dokumen LAPORAN OPERASI

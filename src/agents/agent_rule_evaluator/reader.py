@@ -55,6 +55,7 @@ class DokumenKlaim(object):
 
         # melakukan ekstraksi on demand
         if not nama in ekstraktor:
+            return ''
             raise ValueError("Belum ada ekstraktor untuk berkas: " + nama.value)
 
         # hanya cari pages yang belum punya NamaBerkas.

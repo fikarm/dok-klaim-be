@@ -1,5 +1,6 @@
 import os
 import src.agents.agent_rule_evaluator_vector.parser.searcher as cari
+from src.utils.cacher import cache
 from pymupdf import Document
 from src.agents.agent_rule_evaluator_vector.parser.extractor import extractors
 from src.agents.agent_rule_evaluator_vector.parser.schema import (
@@ -22,8 +23,10 @@ class DokumenKlaim(object):
         self.pdf = pdf
         self.name = os.path.basename(pdf.name or "")
 
-        self.daftar_isi = [None] * pdf.page_count
-        self.daftar_berkas = {}
+        self.daftar_isi = cache(f"{pdf.name}.daftar_isi", [None] * pdf.page_count)
+        self.daftar_berkas = cache(f"{pdf.name}.daftar_berkas", {})
+
+        print("init data berkas: ", self.daftar_berkas)
 
         eklaim = self.__eklaim()
         self.jenis_rawat = self.__jenis_rawat(eklaim)
