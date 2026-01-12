@@ -6,6 +6,13 @@ from src.agents.agent_rule_evaluator.types import (
 )
 from src.agents.agent_rule_evaluator.reader import DokumenKlaim
 
+# from src.rag.dok_klaim.reader import DokumenKlaim
+from src.rag import (
+    rules as Rule,
+    dok_klaim as Dok,
+    jenis_dokumen as JenisDok,
+)
+
 
 def semua_isi_berkas(
     nama_berkas_ditemukan: DaftarNamaBerkasDitemukan, dokklaim: DokumenKlaim
@@ -87,3 +94,45 @@ def evaluate(rule: str, dokklaim: DokumenKlaim):
 
     if isinstance(response, HasilEvaluasi):
         return response
+
+
+def evaluate_rag(rule: str, dok: Dok.reader.DokumenKlaim) -> Rule.evaluator.HasilEvaluasi | None:
+
+    if not Dok.retrieval.nosep_exists(dok.nosep):
+        dok.cleanup()
+        dok.embed()
+        print("dok embed done")
+
+    print("\n\n\n\n==== Rule ====")
+    Rule.evaluator.pprint(rule)
+
+    # cari dokumen terkait dari sebuah rule
+    results = JenisDok.retrieval.search(rule)
+    print("\n==== Jenis Dokumen ====")
+    Rule.retrieval.pprint(results)
+
+    dokumen_terkait = [
+        point.payload["text"] for point in results.points if point.payload
+    ]
+
+    # cari konteks dokumen terkait
+    results = Dok.retrieval.search(dok.nosep, rule, dokumen_terkait)
+    print("\n==== Konteks Dokumen ====")
+    Dok.retrieval.pprint(results)
+
+    # order urutan dokumen
+    # konteks = Dok.retrieval.get_dict(results)
+    # print("\n==== Konteks Dokumen ====")
+    # print(konteks)
+
+    # evaluasi rule + konteks
+    hasil_evaluasi = Rule.evaluator.voting(rule, results)
+    print("\n==== Evaluasi ====")
+    print(hasil_evaluasi)
+
+    if not hasil_evaluasi:
+        raise ValueError(f"Gagal melakukan evaluasi rule: {rule}")
+
+    # dok.cleanup()
+
+    return hasil_evaluasi

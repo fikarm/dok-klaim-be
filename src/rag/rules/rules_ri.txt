@@ -1,0 +1,17 @@
+Tanggal masuk pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes) harus sama dengan tgl. sep pada Berkas Surat Eligibilitas Peserta RSUD Dr. Soetomo.
+Jika Cara Pulang pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes) adalah Atas Persetujuan Dokter, maka setelah kalimat Keadaan Waktu KRS ada kalimat Atas Persetujuan Dokter.
+Jika Cara Pulang pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes) menyatakan meninggal dunia, maka wajib melampirkan Berkas Surat Keterangan Kematian.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika terdapat kode diagnosa yang diawali dengan huruf S dan T00-T79, maka harus melampirkan Berkas Jasa Raharja dan Berkas Surat Pernyataan Kronologis.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika INA-CBG berbunyi Kemoterapi, maka wajib melampirkan Berkas Protokol Pemberian Kemoterapi beserta Berkas Monitoring dan Efek Samping Pasien Kemoterapi.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika LOS hanya 3 hari, maka hasil INA-CBG tidak boleh ada kata "berat", kecuali ada informasi bahwa pasien sudah meninggal.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika Diagnosa Utama terdapat kode Z51.1 dan LOS lebih dari 5 hari, maka lakukan reseleksi diagnosa utama.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), Jika ada prosedur dengan kode digit diawali 00-86, maka harus melampirkan Berkas Laporan Operasi.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), terdapat prosedur 96.71, 96.72, 93.90, 93.960, maka harus ada Berkas Surat Keterangan Penggunaan Alat Bantu Pernafasan.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika Special CMG muncul tarif, maka wajib terlampir Berkas Resep Obat/Alkes.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika Diagnosa Sekunder Terdapat kode O80-O84, maka harus terlampir Berkas Surat Keterangan Telah Dilakukan Pengambilan Sampel Skrining Hipotiroid Kongenital dan Berkas Surat Keterangan Lahir (melahirkan di RSDS).
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika Diagnosa Sekunder Terdapat kode Z38.0, maka harus terlampir Berkas Surat Keterangan Lahir (lahir di RSDS).
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika LOS kurang dari 3 hari dan INA-CBG menunjukkan kata "Berat", maka cek pada Berkas Ringkasan Pasien Pulang Rawat Inap.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika Diagnosa Utama Terdapat kode D56.1, maka harus terlampir Berkas Protokol PEMBERIAN KELASI BESI dan Berkas E-RESEP.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika Diagnosa Utama Terdapat kode D66 dan D67, maka harus terlampir Berkas Protokol PEMBERIAN KOSENTRAT, Berkas HASIL PEMERIKSAAN LABORATORIUM PATOLOGI KLINIK (Faal Koagulasi) dan Berkas E-RESEP.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika terdapat kode diagnosa E40-E46, maka wajib terlampir Berkas Asesmen Gizi.
+Pada Berkas Klaim Individual Pasien (E-Klaim Kemenkes), jika terdapat prosedur Tindakan 99.25, maka wajib melampirkan Berkas PROTOKOL PEMBERIAN KEMOTERAPI (pasien rawat inap).
