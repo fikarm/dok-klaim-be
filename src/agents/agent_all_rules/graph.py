@@ -22,7 +22,7 @@ def call_model(state: State):
 
     state_files_as_system_message(state)
 
-    llm_tool = ChatOllama(model="llama3.1:8b").bind_tools(active_tools)
+    llm_tool = ChatOllama(model="qwen3:latest").bind_tools(active_tools)
     # llm_tool = ChatOllama(model="gemma3:27b").bind_tools(active_tools)
     response = llm_tool.invoke(state["messages"])
 
